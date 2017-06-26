@@ -1,0 +1,1115 @@
+@charset "UTF-8";
+*,
+*:before,
+*:after
+{
+	box-sizing: border-box;
+}
+.clearfix:before,
+.clearfix:after
+{
+	content: " "; 
+	display: table;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+/*==============================HEADER================================*/
+
+header{
+	width: 78%;
+	margin: 0 auto;
+	height: 100px;
+}
+header #logo{
+	width: 25%;
+	height: 70px;
+	float: left;
+	margin-top: 18px;
+}
+header .headerdiv{
+	width: 55%;
+	float: right;
+	text-align: center;
+	margin-top: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+
+}
+header .logo-call{
+	margin: 2px;
+	width: 14%;
+	height: 70px;
+	float: right;
+}
+header h3{
+	margin-left: 50px;
+	margin-top: 10px;
+	font-weight: bold;
+    line-height: inherit;
+}
+header a{
+	text-decoration: none;
+	color: orange;
+}
+header small{
+	margin-left: 40px;
+}
+/*===================Body========================*/
+main{
+	width: 78%;
+	margin: 0 auto;
+	overflow: hidden;
+	border: 1px solid #ddd;
+}
+ .main-container{
+	width: 60%;
+	float: right;
+	margin: 20px;
+	border-radius: 4px;
+}
+.main-container ul li{
+	list-style: none;
+	display: inline-block;
+}
+.ul-container li a{
+	padding-right: 5px;
+    border-right: 1px solid #afdbe7;
+    text-decoration: underline;
+    color: #252e67;
+}
+.listheader{
+	margin-top: 20px;
+    color: #333;
+    background-color: #f2f2f2;
+    border-bottom: 3px solid #ddd;
+    padding: 11px 11px;
+    margin-bottom: 30px;
+}
+.listheader #itemsPerPage{
+	width: 50px;
+}
+.listheader label{
+	margin-top:2px;
+}
+.container-list{
+	width: 70%;
+	display: inline-block;
+}
+.trier{
+	padding-left: 60px; 
+}
+.container-list ul {
+	display: inline;
+	margin-left: 30px;
+}
+.container-list ul li{
+	padding-left: 20px;
+}
+.container-list li a{
+	font-size: 20px;
+	text-decoration: none;
+	color: #2947b4;
+}
+
+.hotel{
+	width: 100%;
+	background-color: #F7FCFF;
+	border: 1px solid #ddd;
+    padding: 15px 12px 0;
+    margin: 0 0 17px 0;
+    border-radius: 5px;
+    position: relative;
+}
+.hotel h2{
+	float: right;
+	display: inline-block;
+	width: 61%;
+}
+.hotel a{
+	color: #2947b4;
+    text-decoration: none;
+    line-height: inherit;
+}
+#istar{
+	width:3%;
+	height: auto;
+}
+.hotel img{
+	width: 100%;
+    height: 120px;
+}
+
+.hotel span{
+	position: absolute;
+	margin-top: 25%;
+    font-size: 10px;
+    color: #FF9800;
+    cursor: pointer;
+    border: 2px solid #FF9800;
+    border-radius: 36px; 
+    padding: 0px 7px 3px 6px;
+}
+
+.hotel span.next{
+	left: 86%;
+}
+
+[class$=bis]{
+	width: 30%;
+    height: 132px;
+    position: relative;
+}
+[class$=bis] li.visible{
+	opacity: 1;
+}
+
+[class$=bis] li{
+	transition: opacity 1s;
+    opacity: 0;
+    position: absolute;
+}
+.hotel p{
+	float: right;
+	margin-left: 50px;
+    font-style: italic;
+    font-size: 20px;
+    width: 31%;
+    margin-top:8%;
+}
+.hotel p a{
+	color: #ff9800 ;
+}
+p.para{
+	width: 60%;
+	margin-top: 0;
+    font-size: 13px;
+    display: inline-block;
+}
+.price_night{
+	position: absolute;
+	bottom: 2px;
+	left: 50px;
+	color: #ff9800;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid #ff9800;
+	padding: 2px;
+	
+}
+
+
+/*==========================Aside=============*/
+aside{
+	width: 30%;
+	margin: 20px;
+}
+h3{
+	width: 100%;
+	margin-left: 13px;
+	font-size: 17px;
+    font-family: 'open-sans',sans-serif;
+    color: #252e67;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.first-aside{
+	border-radius: 10px;
+	background-color: #f8f8f8;
+	border: solid 1px #ddd;
+}
+
+.first-aside h2{
+	border-radius: 10px 10px 0 0px;
+	font-size: 16px;
+	text-align: center;
+	background-color: #eee;
+	padding: 5px;
+	color: #666;
+	
+}
+.first-aside input{
+	border-radius: 3px;
+    width: 90%;
+    height: 30px;
+    margin: 5%;
+	font-size: 13px;
+    font-family: "open-sans",sans-serif;
+}
+.first-aside div{
+	border-bottom: 1px solid #ccc;
+
+}
+/*===============================================*/
+div.price-night{
+	border-bottom: none;
+}
+.price-night input{
+	width: 10%;
+	height: 16px;
+	border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 8px;
+}
+
+.price-night .hotelCount{
+	float: right;
+	margin-top: 11px;
+}
+.price-night .hotelNbContainer {
+	color: #b3b3b3;
+	margin-top: 4px;
+}
+.first-input, .second-input, .third-input, .fourth-input{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+/*===================================================*/
+div.container-stars{
+	overflow: hidden;
+	border-bottom: none;
+}
+.container-stars label {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 34px;
+    height: 34px;
+}
+.container-stars input {
+    display: none;
+ }
+ .iconstar{
+ 	position: relative;
+ }
+ .iconstar img{
+ 	width: 130%;
+ 	opacity: 0.4;
+ }
+ .iconstar img:hover{
+ 	opacity: 1;
+ }
+ .number{
+ 	position: absolute;
+ 	left: 18px;
+    bottom: 18px;
+    font-size: 13px;
+    color:#4fd025;
+ }
+ span.hidehotel{
+ 	display: none;
+ }
+ /*=========================================*/
+#filtersholidays{
+	background: #f8f8f8;
+    border: solid 1px #ddd;
+    margin: 15px 0 22px 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+#filtersholidays h2{
+	font-size: 20px;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: 'open-sans',sans-serif;
+    font-weight: 700;
+    color: #252e67;
+}
+#filtersholidays a img{
+	margin: 20px;
+	margin-right: 40px;
+	opacity: 0.4;
+}
+#filtersholidays a img:hover{
+	opacity: 1;
+
+}
+
+ /*============================================*/
+div.classement{
+	border-bottom: none;
+}
+.classement article small{
+	margin-left: 13px;
+}
+.classement figure img{
+	margin-left: 13px;
+
+}
+img.logotrip{
+	width: 30%;
+	display:inline ;
+}
+div.nbrvote{
+	width: 100%;
+	height: 170px;
+	border-bottom: none;
+
+}
+.nbrvote label{
+	float: left;
+	width: 100%;
+
+}
+.ta-scores img{
+	width: 20%;
+}
+/*======================================*/
+.panel{
+    background: #f8f8f8;
+    border: solid 1px #ddd;
+    margin: 15px 0 22px 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+.writetitle{
+    font-size: 20px;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: 'open-sans',sans-serif;
+    font-weight: 700;
+    color: #252e67;
+}
+.note{
+    display: inline-block;
+    font-size: 31px;
+    color: #51d2e7;
+    font-weight: 700;
+    border-radius: 50% 50% 50% 50%;
+    border: 4px solid #51d2e7;
+    padding: 4px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 1.45em;
+    letter-spacing: -2px;
+    -webkit-transform: rotate(-17deg);
+}
+span.note{
+	margin-left: 35%;
+	margin-top: 10px;
+}
+.logotrust{
+	width: 82%;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+.panel article p{
+	margin-top: 10px;
+	text-align: center;
+}
+.trustpil{
+	width: 50%;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+
+/*==============CSS page principal=============*/
+.main{
+	width: 100%;
+	height: 800px;
+	border: none;
+}
+.contents{
+	margin-top: 0;
+	float: left;
+	position: absolute;
+	width: 85%;
+	margin-left: 9%;
+	background-color:#223267;
+	border-radius: 7px;
+}
+
+.formbar{
+	padding-left: 0.5%; 
+	float: left;
+    height: 100px;
+}
+.searchbar1{
+	border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+	font-size: 15px;
+    font-family: "open-sans",sans-serif;
+}
+.formbar label{
+	color: #fff;
+    font-size: .95em;
+    font-weight: 600;
+}
+.formdate, .formdate1{
+	float: left;
+	width: 13%;
+    margin-left: 10px;
+    height: 100px;
+}
+
+.formdate label, .formdate1 label{
+	color: #fff;
+    font-size: .95em;
+    font-weight: 600;
+}
+
+.formdate input, .formdate1 input{
+	display: block;
+	border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+	font-size: 15px;
+    font-family: "open-sans",sans-serif;
+}
+#home-items{
+    width: 35%;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+
+}
+#home-items label{
+	color: #fff;
+    font-size: .95em;
+    font-weight: 600;
+}
+.searchrac{
+	width: 22%;
+	float: left;
+	margin-right: 20px;
+
+}
+#search_rooms, #search_adults, #search_children{
+    height: 42px;
+    font-size: 1.1em;
+    display: block;
+    margin-top: 10px;
+    width: 50px;
+
+}
+
+#home-items .button{
+	padding: 13px ;
+	float: right;
+	margin-right: 12px;
+	margin-top: -42px;
+    border-radius: 4px;
+    background: #FF8B00;
+    border: 1px solid #cc6f00;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*===============Slider==============*/
+.carousel{
+    width: 100%;
+    height: 260px;
+    position: relative; 
+}
+.img_carousel{
+    width: 100%;
+    height: 800px;
+}
+
+.carousel li.visible{
+    /*transform:translateX(0);*/
+    transition: 3s;
+    opacity: 1;
+}
+.carousel li{
+	transition: 7s;
+    position: absolute;
+    opacity: 0;
+}
+
+/*==============Pagehotelseul============*/
+.mainbus{
+	width: 78%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 1000px;
+    border: 1px solid #ddd;
+}
+.sliderclick{
+	width: 100%;
+	height: 370px;
+    position: relative;
+}
+.img-carousel{
+    width: 100%;
+    height: 370px;
+}
+
+.sliderclick li.visible{
+    opacity: 1;
+}
+
+.sliderclick .li-carousel{
+    opacity: 0;
+    position: absolute;
+    transition: 1.5s;
+}
+
+.prev:hover .chev img {
+	transition: 1.5s;
+	left: -70px;
+}
+
+.next:hover .chev1 img {
+	transition: 1.5s;
+	right: -70px;
+}
+
+.prev:hover .preview {
+ 	width: 20%;
+	left: 0;
+	cursor: pointer;
+	transition: 1.5s;
+}
+
+.next:hover .preview1 {
+ 	width: 20%;
+	transition: 0.4s;
+	right: 0;
+	cursor: pointer;
+	transition: 1.5s;
+}
+
+.sliderclick .chev1 img{
+	position: absolute;
+    width: 6%;
+    cursor: pointer;
+    background-color: #BBB;
+    border: 2px solid #000;
+    opacity: 0.6;
+    height: 17%;
+    top: 40%;
+    right: 0;
+}
+
+.sliderclick .chev img{
+	position: absolute;
+    width: 6%;
+    cursor: pointer;
+    background-color: #BBB;
+    border: 2px solid #000;
+    opacity: 0.6;
+    height: 17%;
+    top: 40%;
+    left: 0;
+}
+
+.sliderclick .preview{
+	position: absolute;
+	width: 5%;
+	cursor: pointer;
+	border: 2px solid #000;
+	opacity: 1;
+	height: 30%;
+	top: 33%;
+	left: -100px;
+	transition: 1.5s;
+}
+
+.sliderclick .preview1{
+	position: absolute;
+	width: 5%;
+	cursor: pointer;
+	border: 2px solid #000;
+	opacity: 1;
+	height: 30%;
+	top: 33%;
+	right: -100px;
+	transition: 1.5s;
+}
+
+/*.sliderclick .next.hidden, .prev.hidden{
+	display: none;
+}*/
+
+.sliderclick .dots{
+	position: absolute;
+	margin-top: 36%;
+	margin-left: 45%;
+	width: 100%;
+}
+.sliderclick .dots .rond.active{
+	background-color: #767676;
+	opacity: 1;
+}
+.sliderclick .dots .rond{
+	float: left;
+	list-style: none;
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    border: 2px solid #767676;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 1%;
+}
+
+div.col{
+	margin-top: 100px;
+	width: 50%;
+	float: left;
+}
+/*===================Responsive===================*/
+@media only screen and (max-width:900px){
+
+
+/*===================Body========================*/
+main{
+	/*height: 3400px;*/
+}
+ .main-container{
+	width: 100%;
+	float: none;
+	margin: 0;
+}
+
+
+/*==========================Aside=============*/
+aside{
+	width: 100%;
+	float: left;
+	margin: 0px;
+}
+h3{
+	width: 100%;
+	margin-left: 13px;
+	font-size: 17px;
+    font-family: 'open-sans',sans-serif;
+    color: #252e67;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+div.price_night{
+
+	
+}
+
+.first-aside{
+	border-radius: 10px;
+	background-color: #f8f8f8;
+	border: solid 1px #ddd;
+}
+
+.first-aside h2{
+	border-radius: 10px 10px 0 0px;
+	font-size: 16px;
+	text-align: center;
+	background-color: #eee;
+	padding: 5px;
+	color: #666;
+	
+}
+.first-aside input{
+	border-radius: 3px;
+    width: 90%;
+    height: 30px;
+    margin: 5%;
+	font-size: 13px;
+    font-family: "open-sans",sans-serif;
+}
+.first-aside div{
+	border-bottom: 1px solid #ccc;
+
+}
+/*===============================================*/
+div.price-night{
+	border-bottom: none;
+}
+.price-night input{
+	width: 10%;
+	height: 16px;
+	border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 8px;
+}
+
+.price-night .hotelCount{
+	float: right;
+	margin-top: 11px;
+}
+.price-night .hotelNbContainer {
+	color: #b3b3b3;
+	margin-top: 4px;
+}
+.first-input, .second-input, .third-input, .fourth-input{
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+/*===================================================*/
+div.container-stars{
+	overflow: hidden;
+	border-bottom: none;
+}
+.container-stars label {
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 34px;
+    height: 34px;
+}
+.container-stars input {
+    display: none;
+ }
+ .iconstar{
+ 	position: relative;
+ }
+ .iconstar img{
+ 	width: 130%;
+ 	opacity: 0.4;
+ }
+ .iconstar img:hover{
+ 	opacity: 1;
+ }
+ .number{
+ 	position: absolute;
+ 	left: 18px;
+    bottom: 18px;
+    font-size: 13px;
+    color:#4fd025;
+ }
+ span.hidehotel{
+ 	display: none;
+ }
+ /*=========================================*/
+#filtersholidays{
+	background: #f8f8f8;
+    border: solid 1px #ddd;
+    margin: 15px 0 22px 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+#filtersholidays h2{
+	font-size: 20px;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: 'open-sans',sans-serif;
+    font-weight: 700;
+    color: #252e67;
+}
+#filtersholidays a img{
+	margin: 20px;
+	margin-right: 40px;
+	opacity: 0.4;
+}
+#filtersholidays a img:hover{
+	opacity: 1;
+
+}
+
+ /*============================================*/
+div.classement{
+	border-bottom: none;
+}
+.classement article small{
+	margin-left: 13px;
+}
+.classement figure img{
+	margin-left: 13px;
+
+}
+img.logotrip{
+	width: 30%;
+	display:inline ;
+}
+div.nbrvote{
+	width: 100%;
+	height: 300px;
+	border-bottom: none;
+
+}
+.nbrvote label{
+	float: left;
+	width: 100%;
+
+}
+.ta-scores img{
+	width: 20%;
+}
+/*======================================*/
+.panel{
+    background: #f8f8f8;
+    border: solid 1px #ddd;
+    margin: 15px 0 22px 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+.writetitle{
+    font-size: 20px;
+    line-height: 1.3em;
+    text-align: center;
+    font-family: 'open-sans',sans-serif;
+    font-weight: 700;
+    color: #252e67;
+}
+.note{
+    display: inline-block;
+    font-size: 31px;
+    color: #51d2e7;
+    font-weight: 700;
+    border-radius: 50% 50% 50% 50%;
+    border: 4px solid #51d2e7;
+    padding: 4px;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 1.45em;
+    letter-spacing: -2px;
+    -webkit-transform: rotate(-17deg);
+}
+span.note{
+	margin-left: 35%;
+	margin-top: 10px;
+}
+.logotrust{
+	width: 82%;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+.panel article p{
+	margin-top: 10px;
+	text-align: center;
+}
+.trustpil{
+	width: 50%;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+
+/*==============CSS page principal=============*/
+.main{
+	width: 100%;
+	height: 800px;
+	border: none;
+}
+.contents{
+	float: left;
+	position: absolute;
+	width: 85%;
+	margin-left: 9%;
+	background-color:#223267;
+	border-radius: 7px;
+}
+
+.formbar{
+	float: left;
+    height: 100px;
+}
+.searchbar1{
+	border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+	font-size: 15px;
+    font-family: "open-sans",sans-serif;
+}
+.formbar label{
+	color: #fff;
+    font-size: .95em;
+    font-weight: 600;
+}
+.formdate, .formdate1{
+	float: left;
+	width: 13%;
+    margin-left: 10px;
+    height: 100px;
+}
+
+.formdate label, .formdate1 label{
+	color: #fff;
+    font-size: .95em;
+    font-weight: 600;
+}
+
+.formdate input, .formdate1 input{
+	display: block;
+	border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+	font-size: 15px;
+    font-family: "open-sans",sans-serif;
+}
+#home-items{
+    width: 35%;
+    height: 100px;
+    float: left;
+    margin-left: 10px;
+
+}
+#home-items label{
+	color: #fff;
+    font-size: .95em;
+    font-weight: 600;
+}
+.searchrac{
+	width: 22%;
+	float: left;
+	margin-right: 20px;
+
+}
+#search_rooms, #search_adults, #search_children{
+    height: 42px;
+    font-size: 1.1em;
+    display: block;
+    margin-top: 10px;
+    width: 50px;
+
+}
+
+#home-items .button{
+	padding: 13px ;
+	float: right;
+	margin-right: 12px;
+	margin-top: -42px;
+    border-radius: 4px;
+    background: #FF8B00;
+    border: 1px solid #cc6f00;
+    cursor: pointer;
+    color: #fff;
+}
+
+/*===============Slider==============*/
+.carousel{
+    width: 100%;
+    height: 260px;
+    position: relative; 
+}
+.img_carousel{
+    width: 100%;
+    height: 800px;
+}
+
+.carousel li.visible{
+    transition: 3s;
+    opacity: 1;
+}
+.carousel li{
+	transition: 7s;
+    position: absolute;
+    opacity: 0;
+}
+/*==============Pagehotelseul============*/
+.mainbus{
+	width: 78%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 1000px;
+    border: 1px solid #ddd;
+}
+.sliderclick{
+	width: 100%;
+	height: 370px;
+    position: relative;
+}
+.img-carousel{
+    width: 100%;
+    height: 370px;
+}
+
+.sliderclick li.visible{
+    display: block;
+}
+.sliderclick li{
+     position: absolute;
+}
+
+.sliderclick span{ 
+    position: absolute;
+    top: 37%;
+    font-size: 20px;
+    color: #FF9800;
+    cursor: pointer;
+    border: 2px solid #FF9800;
+    border-radius: 36px; 
+    padding: 11px 18px 11px 18px;
+}
+span.next{
+    left: 100%;
+
+}
+}
+@media only screen and (max-width:510px){
+	header {
+	display: none;
+}
+	[class$=bis]{
+	width: 100%;
+    height: 132px;
+}
+.hotel h2{
+	font-size: 20px;
+	display: inline-block;
+	width: 100%;
+	margin-top: 140px;
+}
+.hotel p{
+    width: 31%;
+}
+
+p.para{
+	width: 100%;
+	margin-top: 0;
+    display: inline-block;
+}
+}
+@media only screen and (max-width:436px){
+	
+	.hotel span.next{
+	left: 92%;
+}
+section.contents{
+	margin-left: 0;
+	width: 100%;
+	height: 100vh;
+}
+.formbar{
+	width: 100%;
+}
+.formdate, .formdate1{
+	width: 100%;
+	margin-left: 0;
+
+}
+.formdate label, .formdate1 label{
+	width: 100%;
+}
+
+.formdate input, .formdate1 input{
+	width: 100%;
+}
+#home-items{
+    width: 100%;
+
+}
+#home-items label{
+	width: 100%;
+}
+.searchrac{
+	width: 100%;
+
+}
+}
+
+
+
+
+
+

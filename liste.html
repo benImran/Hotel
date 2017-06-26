@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+	<title>Amoma</title>
+	<link rel="stylesheet" href="styles/amoma.css">
+</head>
+<body>
+	<header class="clearfix">
+		<a href="index.html"><img id="logo" src="img-layout/amoma_fr.svg"></a>
+		<div class="headerdiv">
+			<img class="logo-call" src="img-layout/logo_phone2.png">
+			<h3>Réservez en ligne ou appelez-nous au : <a href="#">17</a></h3>
+			<small>Disponible 24h/24 7j/7</small>
+		</div>
+	</header>
+	<main>
+		<section class="main-container" class="clearfix">
+			<div>
+				<ul class="ul-container">
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="#">Hôtels à Dubaï</a></li>
+				</ul>
+			</div>
+			<div class="listheader">
+				<label for="itemsPerPage">Hôtels par page:</label>
+				<select id="itemsPerPage" name="itemsPerPage">
+					<option value="10">3</option>
+					<option value="20">6</option>
+					<option value="30">9</option>
+					<option value="40">12</option>
+					<option value="50">15</option>
+				</select>
+				<div class="container-list">
+					<span class="trier">Trier par :</span>
+					<ul>
+						<li>
+							<a href="#" onclick="tri_par_prix(data)">Prix</a>
+						</li>
+						<li><a href="#" onclick="tri_par_etoiles(data)">Etoiles</a></li>
+						<li><a href="#"onclick="tri_par_nom(data)">Nom</a></li>
+					</ul>
+				</div>
+			</div>
+			<section id="h0" class="hotel clearfix">
+				<article>
+					<h2><a href="detail.html">The Oberoi Dubai Hotel </a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">Située à Dubai, cette propriété constitue l?endroit idéal pour se détendre et se ressourcer. L' Hôtel a été construit en 2008. L?Hôtel est composé d'un bâtiment principal et d'une annexe. L?établissement est composé d?un bâtiment principal doté de 27 étages annexés. L?annexe est composée de 30 étages annexés. L?hôtel abrite un total de 252 chambres.
+					</p>
+					<div class="price_night">267€/Nuit</div>
+					<p>
+						<a href="">Annulation gratuite</a>
+					</p>
+					<div class='h0_carouselbis'>
+		                <ul class='carou'>
+		                	<li class="li_carousel_0 visible">
+		                		<img class="img_carousel" src="img-content/theoberoi.png" alt="">
+		                	</li>	
+                    		<li class="li_carousel_0">
+                    			<img class="img_carousel" src="img-content/receptionoberoi.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_0">
+                    			<img class="img_carousel" src="img-content/chambreoberoi.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_0">
+                    			<img class="img_carousel" src="img-content/oberoipisc.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_0">
+                    			<img class="img_carousel" src="img-content/oberoi2.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_0">
+                    			<img class="img_carousel" src="img-content/oberoiresto.png" alt="">
+                    		</li>
+		                    <span sel="0" class="prev"><</span>
+		                    <span sel="0" class="next">></span>
+		                </ul>
+           			</div>
+				</article> 
+			</section>
+			<section id="h1" class="hotel clearfix">
+				<article>
+					<h2><a href="#">Burj Al Arab</a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">Un formidable ajout dans cette destination privée offrant un bon niveau de services et une alternative aux hôtels 5 étoiles situés dans d'autres malls de Dubaï. La piscine découverte, le centre de remise en forme.
+					</p>
+					<div class="price_night">300€/Nuit</div>
+					<p><a href="">Annulation gratuite</a></p>
+					<div class='h1_carouselbis'>
+		                <ul>
+		                	<li class="li_carousel_1 visible">
+		                		<img class="img_carousel" src="img-content/sofidub.png" alt="">
+		                	</li>	
+                    		<li class="li_carousel_1">
+                    			<img class="img_carousel" src="img-content/sofiroom.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_1"><img class="img_carousel" src="img-content/sofiview.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_1"><img class="img_carousel" src="img-content/sofibath.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_1">
+                    			<img class="img_carousel" src="img-content/sofirece.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_1">
+                    			<img class="img_carousel" src="img-content/sofiroom2.png" alt="">
+                    		</li>
+		                    <span sel="1" class="prev"><</span>
+		                    <span sel="1" class="next">></span>
+		                </ul>
+           			 </div>
+				</article> 
+			</section>
+			<section id="h2" class="hotel clearfix">
+				<article>
+					<h2><a href="#">St. George Hotel</a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">Située à Dubai, cette propriété constitue l?endroit idéal pour se détendre et se ressourcer. L?Hôtel a été construit en 2015. L?hôtel abrite un total de 215 chambres. La propriété est composée de 16 suites juniors, 49 suites.
+					</p>
+					<div class="price_night">67€/Nuit</div>
+					<p><a href="">Annulation gratuite</a></p>
+					<div class='h2_carouselbis'>
+		                <ul>
+		                	<li class="li_carousel_2 visible">
+		                		<img class="img_carousel" src="img-content/grasvview.png" alt="">
+		                	</li>	
+                    		<li class="li_carousel_2">
+                    			<img class="img_carousel" src="img-content/gravrec.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_2">
+                    			<img class="img_carousel" src="img-content/gravview2.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_2">
+                    			<img class="img_carousel" src="img-content/gravter.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_2">
+                    			<img class="img_carousel" src="img-content/gravroom.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_2">
+                    			<img class="img_carousel" src="img-content/gravbath.png" alt="">
+                    		</li>
+		                    <span sel="2" class="prev"><</span>
+		                    <span sel="2" class="next">></span>
+		                </ul>
+           			 </div>
+				</article> 
+			</section>
+			<section id="h3" class="hotel clearfix">
+				<article>
+					<h2><a href="#">Ritz Hotel</a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">Avec son architecture à la fois moderne et élégante, cet hôtel fait partie intégrante des gratte-ciels de Dubaï. Construit en 2002 et rénové en 2004, cet hôtel de centre-ville climatisé compte 394 cha Avec son architecture à la fois moderne et élégante.
+					</p>
+					<div class="price_night">170€/Nuit</div>
+					<p><a href="">Annulation gratuite</a></p>
+					<div class='h3_carouselbis'>
+		                <ul>	
+                    		<li class="li_carousel_3 visible">
+                    			<img class="img_carousel" src="img-content/dubaiatlantis.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_3">
+                    			<img class="img_carousel" src="img-content/sofipalm.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_3">
+                    			<img class="img_carousel" src="img-content/sofisuite.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_3">
+                    			<img class="img_carousel" src="img-content/sofisuite2.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_3">
+                    			<img class="img_carousel" src="img-content/sofipalmroom.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_3">
+                    			<img class="img_carousel" src="img-content/sofibathroo.png" alt="">
+                    		</li>
+		                    <span sel="3" class="prev"><</span>
+		                    <span sel="3" class="next">></span>
+		                </ul>
+           			</div>
+				</article> 
+			</section>
+			<section id="h4" class="hotel clearfix">
+				<article>
+					<h2><a href="#">Carlton Hotel</a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">L'hôtel est à une courte distance en voiture de Dubaï Media et Internet City, de Knowledge Village, de la zone franche d'Jebel Ali et à quelques minutes à pied de la station de métro. L'hôtel comprend 200 chambres de luxe, cinq superbes restaurants et salons.
+					</p>
+					<div class="price_night">100€/Nuit</div>
+					<p><a href="">Annulation gratuite</a></p>
+					<div class='h4_carouselbis'>
+		                <ul>
+		                	<li class="li_carousel_4 visible">
+		                		<img class="img_carousel" src="img-content/anataswim.png" alt="">
+		                	</li>	
+                    		<li class="li_carousel_4">
+                    			<img class="img_carousel" src="img-content/anataroom.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_4">
+                    			<img class="img_carousel" src="img-content/anataroom2.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_4">
+                    			<img class="img_carousel" src="img-content/anataview1.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_4">
+                    			<img class="img_carousel" src="img-content/anatarest.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_4">
+                    			<img class="img_carousel" src="img-content/anatabat.png" alt="">
+                    		</li>
+		                    <span sel="4" class="prev"><</span>
+		                    <span sel="4" class="next">></span>
+		                </ul>
+           			</div>
+				</article>
+			</section>
+			<section id="h5" class="hotel clearfix">
+				<article>
+					<h2><a href="#">Nassima Royal Hotel</a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">Le H Dubaï est un fantastique hôtel situé sur Sheikh Zayed Road dans le nouveau quartier des affaires, un superbe emplacement bien relié à toutes les parties de la ville. Il est proche du World Trade Centre et du Centre Financier International de Dubaï.
+					</p>
+					<div class="price_night">90€/Nuit</div>
+					<p>
+						<a href="">Annulation gratuite</a>
+					</p>
+					<div class='h5_carouselbis'>
+		                <ul>
+		                	<li class="li_carousel_5 visible">
+		                		<img class="img_carousel" src="img-content/ritzview.png" alt="">
+		                	</li>	
+                    		<li class="li_carousel_5">
+                    			<img class="img_carousel" src="img-content/ritzroom.png" alt="">
+
+                    		</li>
+                    		<li class="li_carousel_5">
+                    			<img class="img_carousel" src="img-content/ritzswim.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_5">
+                    			<img class="img_carousel" src="img-content/ritzrest.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_5">
+                    			<img class="img_carousel" src="img-content/ritzsal.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_5">
+                    			<img class="img_carousel" src="img-content/ritzsuite.png" alt="">
+                    		</li>
+		                    <span sel="5" class="prev"><</span>
+		                    <span sel="5" class="next">></span>
+		                </ul>
+           			</div>
+				</article> 
+			</section>
+			<section id="h6" class="hotel clearfix">
+				<article>
+					<h2><a href="#">Kempinski Hotel</a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">Le Wavebreaker vous fera profiter de ses menus à la carte, la Pergola vous proposera son buffet grill pour le déjeuner et le dîner, le Pachanga réveillera les saveurs de l’Argentine, du Brésil, du Mexique et de Cuba ; snacks ou cocktails de champagne au Studio One.
+					</p>
+					<div class="price_night">200€/Nuit</div>
+					<p><a href="">Annulation gratuite</a></p>
+					<div class='h6_carouselbis'>
+		                <ul>
+		                	<li class="li_carousel_6 visible">
+		                		<img class="img_carousel" src="img-content/armanifac.png" alt="">
+		                	</li>	
+                    		<li class="li_carousel_6">
+                    			<img class="img_carousel" src="img-content/armanipool.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_6">
+                    			<img class="img_carousel" src="img-content/armaniroom.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_6">
+                    			<img class="img_carousel" src="img-content/armnairoom2.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_6">
+                    			<img class="img_carousel" src="img-content/armanirest.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_6">
+                    			<img class="img_carousel" src="img-content/armanibaig.png" alt="">
+                    		</li>
+		                    <span sel="6" class="prev"><</span>
+		                    <span sel="6" class="next">></span>
+		                </ul>
+           			</div>
+				</article> 
+			</section>
+			<section id="h7" class="hotel clearfix">
+				<article>
+					<h2><a href="#">Grand Hyatt Dubai</a>
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+						<img id="istar" src="img-layout/star.png" alt"">
+					</h2>
+					<p class="para">Situation de l'établissement En choisissant l'établissement The Address Dubai Mall, vous aurez la chance de séjourner dans le centre de Dubaï, à quelques minutes de marche de KidZania et Centre commercial Dubai Mall. Cet hôtel 5 étoiles se trouve tout près de Burj Khalifa et The Dubai Fountain.Chambres Les 244 chambres climatisées.
+					</p>
+					<div class="price_night">87€/Nuit</div>
+					<p><a href="">Annulation gratuite</a></p>
+					<div class='h7_carouselbis'>
+		                <ul>
+		                	<li class="li_carousel_7 visible">
+		                		<img class="img_carousel" src="img-content/adressduba.png" alt="">
+		                	</li>	
+                    		<li class="li_carousel_7">
+                    			<img class="img_carousel" src="img-content/adresspool.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_7">
+                    			<img class="img_carousel" src="img-content/adressroom.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_7">
+                    			<img class="img_carousel" src="img-content/adress.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_7">
+                    			<img class="img_carousel" src="img-content/adressrecp.png" alt="">
+                    		</li>
+                    		<li class="li_carousel_7">
+                    			<img class="img_carousel" src="img-content/adressrooms.png" alt="">
+                    		</li>
+		                    <span sel="7" class="prev"><</span>
+		                    <span sel="7" class="next">></span>
+		                </ul>
+           			</div>
+				</article> 
+			</section>
+		</section>
+		<aside>
+			<section class="first-aside" class="clearfix">
+				<h2>Affiner votre recherche</h2>
+				<div class="research">
+					<h3>Nom de l'hôtel</h3>
+					<input name="hotelname" id="hotelname" type="text" value="">
+					<a href="#" class="button">
+						<span class="icons-site"></span>
+					</a>
+				</div>
+				<div class="price-night">
+					<h3>Prix / Nuit</h3>
+					<div class="first-input">
+	            		<input value="0_70" onclick="filtre_par_prix(this,data, 0, 70)" id="mf_price_0" type="checkbox" name=""> &lt; 70 EUR 
+	            		<span class="hotelNbContainer">
+	                		<span class="hotelCount">(1)</span>
+	                	</span>
+	                </div>
+	                <div class="second-input">
+	            		<input value="70 - 140" onclick="filtre_par_prix(this,data, 70,140)" id="mf_price_0" type="checkbox" name=""> 70 EUR - 140 EUR 
+	            		<span class="hotelNbContainer">
+	                		<span class="hotelCount">(3)</span>
+	                	</span>
+	                </div>
+	                <div class="third-input">
+	            		<input value="140_250" onclick="filtre_par_prix(this,data, 140,250)" id="mf_price_0" type="checkbox" name=""> 140 EUR - 250 EUR
+	            		<span class="hotelNbContainer">
+	                		<span class="hotelCount">(2)</span>
+	                	</span>
+	                </div>
+	                <div class="fourth-input">
+	            		<input value="250" onclick="filtre_par_prix(this,data, 250,999999)" id="mf_price_0" type="checkbox" name=""> > 250 EUR
+	            		<span class="hotelNbContainer">
+	                		<span class="hotelCount">(2)</span>
+	                	</span>
+	                </div>
+	                <div class="stars">
+						<h3>Etoiles</h3>
+						<div class="container-stars">
+							<label for="stars_0" title="3 hôtels disponibles" id="star_5">
+	        					<input type="checkbox" name="stars[]" value="1" id="stars_0">
+	        					<i class="iconstar">
+	        						<a href="#" onclick="filtre_by_nbre(data,5)"><img src="img-content/iconstars.svg" alt=""></a>
+	        						<span class="number">5</span>
+	        					</i>
+	        					<span class="hidehotel">
+	            					<span class="hotelCount">20</span> hôtels disponibles
+	            				</span>
+    						</label>
+    						<label for="stars_1" title="7 hôtels disponibles" id="star_4">
+						        <input type="checkbox" name="stars[]" value="3" id="stars_1">
+						        <i class="iconstar">
+						        	<a href="#" onclick="filtre_by_nbre(data,4)"><img src="img-content/iconstars.svg" alt=""></a>
+						        	<span class="number">4</span>
+						        </i>
+						        <span class="hidehotel">
+	            					<span class="hotelCount">19</span> hôtels disponibles
+	            				</span>
+    						</label>
+	    						<label for="stars_2" title="5 hôtels disponibles" id="star_3">
+						        <input type="checkbox" name="stars[]" value="3" id="stars_2">
+						        <i class="iconstar">
+						        	<a href="#" onclick="filtre_by_nbre(data,3)"><img src="img-content/iconstars.svg" alt=""></a>
+						        	<span class="number">3</span>
+						        </i>
+						        <span class="hidehotel">
+	            					<span class="hotelCount">19</span> hôtels disponibles
+	            				</span>
+   							 </label>
+	    					<label for="stars_3" title="4 hôtels disponibles" id="star_2">
+						        <input type="checkbox" name="stars[]" value="3" id="stars_3">
+						        <i class="iconstar">
+						        	<a href="#" onclick="filtre_by_nbre(data,2)"><img src="img-content/iconstars.svg" alt=""></a>
+						        	<span class="number">2</span>
+						        </i>
+						        <span class="hidehotel">
+	            					<span class="hotelCount">19</span> hôtels disponibles
+	            				</span>
+   							 </label>
+	    					<label for="stars_4" title="8 hôtels disponibles" id="star_1">
+						        <input type="checkbox" name="stars[]" value="4" id="stars_4">
+						        <i class="iconstar">
+						        	<a href="#" onclick="filtre_by_nbre(data,1)"><img src="img-content/iconstars.svg" alt=""></a>
+						        	<span class="number">1</span>
+						        </i>
+						        <span class="hidehotel">
+	            					<span class="hotelCount">19</span> hôtels disponibles
+	            				</span>
+   							 </label>
+						</div>
+					</div>
+					<div class="classement">
+						<h3>Avis des clients</h3>
+						<article>
+							<p>
+								<small>En collaboration avec : </small>
+								<figure>
+									<img class="logotrip" src="img-layout/tripadvisorlogo.png" alt="">
+								</figure>
+							</p>
+						</article>
+						<div class="nbrvote" class="clearfix">
+							<label for="tar_0" id="labelTar_5">
+			            		<input type="checkbox" name="tar[]" value="5" id="tar_0">
+			            		<span class="ta-scores ta-score-5">
+			            			<img src="http://www.hotelgemma.it/wp/wp-content/uploads/5circles.png">
+			            		</span>
+			            		<span class="nblistehotel">
+			                		<span class="hotelCount">(3)</span>
+	                			</span>
+	                		</label>
+	                		<label for="tar_0" id="labelTar_5">
+			            		<input type="checkbox" name="tar[]" value="5" id="tar_0">
+			            		<span class="ta-scores ta-score-5">
+			            			<img src="http://www.hotelgemma.it/wp/wp-content/uploads/5circles.png">
+			            		</span>
+			            		<span class="nblistehotel">
+			                		<span class="hotelCount">(3)</span>
+	                			</span>
+	                		</label>
+	                		<label for="tar_0" id="labelTar_5">
+			            		<input type="checkbox" name="tar[]" value="5" id="tar_0">
+			            		<span class="ta-scores ta-score-5">
+			            			<img src="http://www.hotelgemma.it/wp/wp-content/uploads/5circles.png">
+			            		</span>
+			            		<span class="nblistehotel">
+			                		<span class="hotelCount">(3)</span>
+	                			</span>
+	                		</label>
+							<label for="tar_0" id="labelTar_5">
+			            		<input type="checkbox" name="tar[]" value="5" id="tar_0">
+			            		<span class="ta-scores ta-score-5">
+			            			<img src="http://www.hotelgemma.it/wp/wp-content/uploads/5circles.png">
+			            		</span>
+			            		<span class="nblistehotel">
+			                		<span class="hotelCount">(12)</span>
+	                			</span>
+	                		</label>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="panel">
+					<h2 class="writetitle">Nos clients nous font confiance !</h2>
+					<p>
+						<span class="note">9</span>
+						<span>
+							<img class="logotrust" src="img-content/notetrust.png" alt="">
+						</span>
+					</p>
+					<article>
+						<p>Basé sur 2250 avis Trustpilot </p>
+						<figure>
+							<img class="trustpil" src="img-layout/trustpilot.png" alt="">
+						</figure>
+					</article>
+				</div>	
+			</section>
+			<section>
+				<div id="filtersholidays">
+					<h2>Faite votre choix avec nos options !</h2>
+					<span>
+						<a href="#"><img src="img-content/bus.png" alt=""></a>
+					</span>
+					<span>
+						<a href="#"><img src="img-content/wifi.png" alt=""></a>
+					</span>
+					<span>
+						<a href="#"><img src="img-content/plate-fork-and-knife.png" alt=""></a>
+					</span>
+					<span>
+						<a href="#"><img src="img-content/parkedcar.png" alt=""></a>
+					</span>	
+				</div>
+			</section>
+		</aside>
+	</main>
+	<script src="js/data.js"></script>
+	<script src="js/carouselbis.js"></script>
+</body>
+</html>
